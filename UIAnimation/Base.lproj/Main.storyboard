@@ -61,7 +61,7 @@
         <!--Base-->
         <scene sceneID="F1L-Fx-mba">
             <objects>
-                <viewController id="ann-cb-b2r" sceneMemberID="viewController">
+                <viewController id="ann-cb-b2r" customClass="ViewController" customModule="UIAnimation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JqL-BI-YnF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -71,7 +71,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rocket" translatesAutoresizingMaskIntoConstraints="NO" id="C1x-nH-jru">
-                                <rect key="frame" x="159" y="342" width="96" height="128"/>
+                                <rect key="frame" x="159" y="127" width="96" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -79,6 +79,10 @@
                         <viewLayoutGuide key="safeArea" id="QYu-IY-owY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Base" image="icon1" selectedImage="icon1" id="lap-bA-RHR"/>
+                    <connections>
+                        <outlet property="rocket" destination="C1x-nH-jru" id="AT1-TD-c5p"/>
+                        <outlet property="world" destination="rez-lf-ilS" id="OZk-zC-jYS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MIb-nC-bBM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
