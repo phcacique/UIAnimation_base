@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BDF2238229C5DCF00704E8F /* BronzeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDF2237229C5DCF00704E8F /* BronzeViewController.swift */; };
+		3BDF223A229C702B00704E8F /* PrataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDF2239229C702B00704E8F /* PrataViewController.swift */; };
+		3BDF223C229C804900704E8F /* OuroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDF223B229C804900704E8F /* OuroViewController.swift */; };
 		778CE9D2229BF77300F5483E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778CE9D1229BF77300F5483E /* AppDelegate.swift */; };
 		778CE9D4229BF77300F5483E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778CE9D3229BF77300F5483E /* ViewController.swift */; };
 		778CE9D7229BF77300F5483E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 778CE9D5229BF77300F5483E /* Main.storyboard */; };
@@ -15,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3BDF2237229C5DCF00704E8F /* BronzeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BronzeViewController.swift; sourceTree = "<group>"; };
+		3BDF2239229C702B00704E8F /* PrataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrataViewController.swift; sourceTree = "<group>"; };
+		3BDF223B229C804900704E8F /* OuroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OuroViewController.swift; sourceTree = "<group>"; };
 		778CE9CE229BF77300F5483E /* UIAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		778CE9D1229BF77300F5483E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		778CE9D3229BF77300F5483E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,10 +62,13 @@
 			children = (
 				778CE9D1229BF77300F5483E /* AppDelegate.swift */,
 				778CE9D3229BF77300F5483E /* ViewController.swift */,
+				3BDF2237229C5DCF00704E8F /* BronzeViewController.swift */,
+				3BDF2239229C702B00704E8F /* PrataViewController.swift */,
 				778CE9D5229BF77300F5483E /* Main.storyboard */,
 				778CE9D8229BF77600F5483E /* Assets.xcassets */,
 				778CE9DA229BF77600F5483E /* LaunchScreen.storyboard */,
 				778CE9DD229BF77600F5483E /* Info.plist */,
+				3BDF223B229C804900704E8F /* OuroViewController.swift */,
 			);
 			path = UIAnimation;
 			sourceTree = "<group>";
@@ -135,8 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BDF2238229C5DCF00704E8F /* BronzeViewController.swift in Sources */,
 				778CE9D4229BF77300F5483E /* ViewController.swift in Sources */,
 				778CE9D2229BF77300F5483E /* AppDelegate.swift in Sources */,
+				3BDF223A229C702B00704E8F /* PrataViewController.swift in Sources */,
+				3BDF223C229C804900704E8F /* OuroViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +295,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PV6ZXMXKDK;
+				DEVELOPMENT_TEAM = DHAN829484;
 				INFOPLIST_FILE = "$(SRCROOT)/UIAnimation/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,7 +313,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PV6ZXMXKDK;
+				DEVELOPMENT_TEAM = DHAN829484;
 				INFOPLIST_FILE = "$(SRCROOT)/UIAnimation/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
