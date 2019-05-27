@@ -12,6 +12,8 @@
 		778CE9D7229BF77300F5483E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 778CE9D5229BF77300F5483E /* Main.storyboard */; };
 		778CE9D9229BF77600F5483E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 778CE9D8229BF77600F5483E /* Assets.xcassets */; };
 		778CE9DC229BF77600F5483E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 778CE9DA229BF77600F5483E /* LaunchScreen.storyboard */; };
+		A4C8D51C229C6C2000D6C26B /* BronzeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C8D51B229C6C2000D6C26B /* BronzeVC.swift */; };
+		A4C8D522229C816E00D6C26B /* PrataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C8D521229C816E00D6C26B /* PrataVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		778CE9D8229BF77600F5483E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		778CE9DB229BF77600F5483E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		778CE9DD229BF77600F5483E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4C8D51B229C6C2000D6C26B /* BronzeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BronzeVC.swift; sourceTree = "<group>"; };
+		A4C8D521229C816E00D6C26B /* PrataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrataVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 				778CE9D1229BF77300F5483E /* AppDelegate.swift */,
 				778CE9D3229BF77300F5483E /* ViewController.swift */,
 				778CE9D5229BF77300F5483E /* Main.storyboard */,
+				A4C8D521229C816E00D6C26B /* PrataVC.swift */,
+				A4C8D51B229C6C2000D6C26B /* BronzeVC.swift */,
 				778CE9D8229BF77600F5483E /* Assets.xcassets */,
 				778CE9DA229BF77600F5483E /* LaunchScreen.storyboard */,
 				778CE9DD229BF77600F5483E /* Info.plist */,
@@ -135,6 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4C8D51C229C6C2000D6C26B /* BronzeVC.swift in Sources */,
+				A4C8D522229C816E00D6C26B /* PrataVC.swift in Sources */,
 				778CE9D4229BF77300F5483E /* ViewController.swift in Sources */,
 				778CE9D2229BF77300F5483E /* AppDelegate.swift in Sources */,
 			);

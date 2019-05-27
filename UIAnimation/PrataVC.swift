@@ -1,22 +1,35 @@
 //
-//  ViewController.swift
-//  UIAnimation_base
+//  PrataVC.swift
+//  UIAnimation
 //
-//  Created by Pedro Cacique on 27/05/19.
+//  Created by Artur Carneiro on 27/05/19.
 //  Copyright © 2019 Pedro Cacique. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class PrataVC: UIViewController {
 
-    @IBOutlet weak var world: UIImageView!
     @IBOutlet weak var rocket: UIImageView!
+    @IBOutlet weak var world: UIImageView!
+    @IBOutlet weak var gameTitle: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+        // Do any additional setup after loading the view.
     }
+    
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
     
     override func viewWillAppear(_ animated: Bool) {
         self.world.center.y = self.view.frame.height
@@ -28,8 +41,10 @@ class ViewController: UIViewController {
         self.rocket.frame.size.height = self.view.frame.size.height * 0.15
         
         self.rocket.image = UIImage(named: "rocket2")
-
-      
+        
+        self.gameTitle.center.x -= view.bounds.width
+        
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -40,7 +55,7 @@ class ViewController: UIViewController {
             self.rocket.image = UIImage(named: "rocket2")
         }
     }
+    
 
 
 }
-
