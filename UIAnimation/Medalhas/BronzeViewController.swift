@@ -47,8 +47,6 @@ class BronzeViewController: UIViewController {
         
         UIView.animate(withDuration: self.animateDuration, delay: 0, options: [.curveLinear], animations: {
             self.rocket.center = self.inicio
-            
-            
             self.inicio.y = self.inicio.y + self.rocket.frame.size.height/2 - 15
             self.final.y = self.final.y + self.rocket.frame.size.height/2
             self.animateFire(self.final, self.inicio)
