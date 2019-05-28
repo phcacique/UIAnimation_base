@@ -13,14 +13,44 @@
         <!--Bronze-->
         <scene sceneID="lHF-dN-ARc">
             <objects>
-                <viewController id="LaB-eW-x7h" sceneMemberID="viewController">
+                <viewController id="LaB-eW-x7h" customClass="ViewControllerBronze" customModule="UIAnimation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8N2-mN-kSu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="YTX-xN-P9m">
+                                <rect key="frame" x="147" y="104" width="121" height="29"/>
+                                <segments>
+                                    <segment title="Cinza"/>
+                                    <segment title="Azul"/>
+                                </segments>
+                                <connections>
+                                    <action selector="indexChanged:" destination="LaB-eW-x7h" eventType="valueChanged" id="0SQ-uz-PN2"/>
+                                </connections>
+                            </segmentedControl>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="world1" translatesAutoresizingMaskIntoConstraints="NO" id="F9F-cS-1Ig">
+                                <rect key="frame" x="0.0" y="199" width="414" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rocket" translatesAutoresizingMaskIntoConstraints="NO" id="F0n-Nv-Km7">
+                                <rect key="frame" x="159" y="342" width="96" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YTX-xN-P9m" firstAttribute="top" secondItem="2nI-w7-VyP" secondAttribute="top" constant="60" id="E8o-Uv-Odt"/>
+                            <constraint firstItem="YTX-xN-P9m" firstAttribute="leading" secondItem="2nI-w7-VyP" secondAttribute="leading" constant="147" id="SMs-rv-ks8"/>
+                            <constraint firstItem="2nI-w7-VyP" firstAttribute="trailing" secondItem="YTX-xN-P9m" secondAttribute="trailing" constant="146" id="zJy-ri-kb5"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="2nI-w7-VyP"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Bronze" image="icon4" id="VvG-JI-ieX"/>
+                    <connections>
+                        <outlet property="rocketBronze" destination="F0n-Nv-Km7" id="bm6-jh-cXA"/>
+                        <outlet property="segmentedControl" destination="YTX-xN-P9m" id="5sX-Od-EQO"/>
+                        <outlet property="worldBronze" destination="F9F-cS-1Ig" id="nJP-e9-tel"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ga-1z-lVg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -61,7 +91,7 @@
         <!--Base-->
         <scene sceneID="F1L-Fx-mba">
             <objects>
-                <viewController id="ann-cb-b2r" sceneMemberID="viewController">
+                <viewController id="ann-cb-b2r" customClass="ViewController" customModule="UIAnimation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JqL-BI-YnF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -79,6 +109,10 @@
                         <viewLayoutGuide key="safeArea" id="QYu-IY-owY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Base" image="icon1" selectedImage="icon1" id="lap-bA-RHR"/>
+                    <connections>
+                        <outlet property="rocket" destination="C1x-nH-jru" id="LQA-OS-adu"/>
+                        <outlet property="world" destination="rez-lf-ilS" id="eud-C8-4Xg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MIb-nC-bBM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
